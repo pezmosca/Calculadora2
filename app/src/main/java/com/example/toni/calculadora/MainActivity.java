@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9, boton0;
     private Button botonmas, botonmenos, botonpor, botonmult, botonpunto, botonigual;
     private TextView texto;
+    String previo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,57 +55,73 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         texto = (TextView) findViewById(R.id.textView);
 
     }
-
     @Override
-    public void onClick(View v) {
+    public void onClick(
+View v) {
         switch (v.getId()){
             case R.id.button1:
-                texto.setText("1");
+                previo = texto.getText().toString();
+                texto.setText(previo+"1");
                 break;
             case R.id.button2:
-                texto.setText("2");
+                previo = texto.getText().toString();
+                texto.setText(previo+"2");
                 break;
             case R.id.button3:
-                texto.setText("3");
+                previo = texto.getText().toString();
+                texto.setText(previo+"3");
                 break;
             case R.id.button4:
-                texto.setText("4");
+                previo = texto.getText().toString();
+                texto.setText(previo+"4");
                 break;
             case R.id.button5:
-                texto.setText("5");
+                previo = texto.getText().toString();
+                texto.setText(previo+"5");
                 break;
             case R.id.button6:
-                texto.setText("6");
+                previo = texto.getText().toString();
+                texto.setText(previo+"6");
                 break;
             case R.id.button7:
-                texto.setText("7");
+                previo = texto.getText().toString();
+                texto.setText(previo+"7");
                 break;
             case R.id.button8:
-                texto.setText("8");
+                previo = texto.getText().toString();
+                texto.setText(previo+"8");
                 break;
             case R.id.button9:
-                texto.setText("9");
+                previo = texto.getText().toString();
+                texto.setText(previo+"9");
                 break;
             case R.id.button0:
-                texto.setText("0");
+                previo = texto.getText().toString();
+                texto.setText(previo+"0");
                 break;
             case R.id.buttonmas:
-                texto.setText("+");
+                previo = texto.getText().toString();
+                texto.setText(previo+"+");
                 break;
             case R.id.buttonmenos:
-                texto.setText("-");
+                previo = texto.getText().toString();
+                texto.setText(previo+"-");
                 break;
             case R.id.buttonpor:
-                texto.setText("%");
+                previo = texto.getText().toString();
+                texto.setText(previo+"%");
                 break;
             case R.id.buttonmult:
-                texto.setText("X");
+                previo = texto.getText().toString();
+                texto.setText(previo+"X");
                 break;
             case R.id.buttonpunto:
-                texto.setText(".");
+                previo = texto.getText().toString();
+                texto.setText(previo+".");
                 break;
             case R.id.buttonigual:
-                texto.setText("=");
+                previo = texto.getText().toString();
+                texto.setText(previo+"=");
                 break;
         }
 
